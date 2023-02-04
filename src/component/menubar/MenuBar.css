@@ -1,0 +1,45 @@
+.menubar_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  height: 90px;
+  border-bottom: 2px solid lightgrey;
+  margin: 0 auto;
+}
+
+.menubar_menu label {
+  margin-left: 0.5rem;
+}
+
+.menubar_contact label {
+  margin-right: 0.5rem;
+}
+
+.menubar_menu,
+.menubar_contact {
+  position: relative;
+  top: 20px;
+}
+
+.menubar_menu label,
+.menubar_contact label {
+  font-size: 1.2rem;
+  position: relative;
+  bottom: 5px;
+  text-transform: uppercase;
+}
+
+.menubar_omsairam label {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: var(--darkFont-color);
+}
+
+@media (max-width: 400px) {
+  .menubar_menu label,
+  .menubar_contact label {
+    display: none;
+  }
+}
