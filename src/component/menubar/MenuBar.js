@@ -1,13 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import "./MenuBar.css";
 import MenuIcon from "@mui/icons-material/Menu";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
+import MenuOptions from "../menuOptions/MenuOptions";
 
 const MenuBar = () => {
+  const [showMenuOptions, setShowMenuOptions] = useState(false);
+
+  const showMenuHandler = () => {
+    setShowMenuOptions(!showMenuOptions);
+  };
+
   return (
     <>
       <div className="menubar_container">
-        <div className="menubar_menu">
+        <div className="menubar_menu" onClick={showMenuHandler}>
           <MenuIcon />
           <label>Menu</label>
         </div>
@@ -19,6 +26,7 @@ const MenuBar = () => {
           <MailOutlineIcon />
         </div>
       </div>
+      {showMenuOptions && <MenuOptions showMenuHandler={showMenuHandler} />}
     </>
   );
 };

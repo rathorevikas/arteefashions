@@ -1,0 +1,23 @@
+.carouselProduct_container {
+  margin: 45px auto;
+  width: 250px;
+  height: 400px;
+  background-color: aqua;
+
+  -webkit-box-shadow: -17px -19px 18px -8px rgba(208, 222, 214, 1);
+  -moz-box-shadow: -17px -19px 18px -8px rgba(208, 222, 214, 1);
+  box-shadow: -17px -19px 18px -8px rgba(208, 222, 214, 1);
+}
+
+.carouselProduct_innerContainer{
+    width: 250px;
+    height: 400px;
+    -webkit-box-shadow: 16px 22px 18px -8px rgba(0, 0, 0, 0.61);
+    -moz-box-shadow: 16px 22px 18px -8px rgba(0, 0, 0, 0.61);
+    box-shadow: 16px 22px 18px -8px rgba(0, 0, 0, 0.61);
+}
+
+.carouselProduct_heading{
+    position: relative;
+    top:10px;
+}

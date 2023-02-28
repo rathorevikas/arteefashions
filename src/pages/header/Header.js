@@ -7,7 +7,7 @@ import MenuBar from "../../component/menubar/MenuBar";
 
 const Header = () => {
   return (
-    <header className="header_container">
+    <header id="header" className="header_container">
       <div className="header_menubar">
         <MenuBar />
       </div>
