@@ -6,6 +6,7 @@
   height: 90px;
   border-bottom: 2px solid lightgrey;
   margin: 0 auto;
+  position: relative;
 }
 
 .menubar_menu label {
